@@ -1,0 +1,16 @@
+
+<div class="shadow-sm bg-light bg-gradient p-3 mb-3" >
+  <h1> <%= @flat.name %> </h1>
+  <h4 class="text-muted" > <%= @flat.address %> </h4>
+</div>
+
+<div class="shadow-sm bg-light bg-gradient p-3 mb-3" >
+  <h3> A bit more about this flat... </h3>
+  <p> <%= @flat.description %> </p>
+</div>
+
+<div class="shadow-sm bg-light bg-gradient p-3 mb-3" >
+  <h3> Details </h3>
+  <i class="fa-solid fa-user-group"></i><%= @flat.number_of_guests %>
+        <i class="fa-solid fa-euro-sign mb-4"></i><%= @flat.price_per_night %>
+</div>
